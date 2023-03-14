@@ -1,0 +1,15 @@
+import random
+
+number = random.randint(1, 50)
+bolzham = int(input("1 ден 50 ге дейінгі санды тап: "))
+areket = 1
+
+while bolzham != number:
+    if bolzham > number:
+        print("Азырақ...")
+    else:
+        print("Көбірек...")
+    bolzham = int(input("Тағыда қайталаңыз: "))
+    areket += 1
+
+print("Сіз жасырын  санды таптыңыз ол  {} ,оны {} әрекетте таптыңыз!".format(number, areket))
